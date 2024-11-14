@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> Manipularea structurii, stilizarii si a datelor prin folosirea JS-ului </title>
+
+</head>
+
+<style>
+	select{
+		font-family: Times New Roman;
+		font-size: 14px;
+		color: seagreen;
+	}
+</style>
+
+<body>
+
+	<h2> Destinatii exotice </h2>
+
+	<p><i> Va rugam sa alegeti o destinatie: </i></p>
+
+<select onchange="dropDown()" id = "selection" >
+		<option value="Maldive"> Maldive </option>
+		<option value="Bora Bora"> Bora Bora </option>
+		<option value="Caraibe"> Caraibe </option>
+		<option value="Goa"> Goa </option>
+		<option value="Bali"> Bali </option>
+		<option value="Thailanda"> Thailanda </option>
+		<option value="Zanzibar"> Zanzibar </option>
+		<option value="Sri Lanka"> Sri Lanka </option>
+		<option value="Cuba"> Cuba </option>
+
+</select>
+
+<div id = "destEx">
+
+</div>
+
+<script type="text/javascript">
+
+	function dropDown(){
+		var chooseDest = document.getElementById("selection").value;
+		document.getElementById("destEx").innerHTML = "Ati ales " + chooseDest + " " + " ca destinatie exotica!" ;
+	}
+</script>
+		
+</body>
+</html>
